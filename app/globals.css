@@ -8,7 +8,9 @@
   /* Surface and UI Layers */
   --surface-dark: #1c1c1c;
   --surface-darker: #262626;
+  --surface-darker-hover: #2c2c2c;
   --surface-light: #1f1f1f;
+  --surface-lighter: #383838;
   --border-color: #ababab;
 
   /* Primary Theme */
@@ -28,6 +30,7 @@
   --accent-green2: #2e4a40;
   --accent-brown1: #735f32;
   --accent-brown2: #4a452e;
+  --accent-brown3: #664a04;
   --accent-purple-deep: #7f167f;
   --accent-blue-dark: #1d2569;
   --accent-red-deep: #b73e3e;
@@ -51,7 +54,9 @@
   /* Surface */
   --color-surface-dark: var(--surface-dark);
   --color-surface-darker: var(--surface-darker);
+  --color-surface-darker-hover: var(--surface-darker-hover);
   --color-surface-light: var(--surface-light);
+  --color-surface-lighter: var(--surface-lighter);
   --color-border: var(--border-color);
 
   /* Theme */
@@ -71,6 +76,7 @@
   --color-accent-green2: var(--accent-green2);
   --color-accent-brown1: var(--accent-brown1);
   --color-accent-brown2: var(--accent-brown2);
+  --color-accent-brown3: var(--accent-brown3);
   --color-accent-purple-deep: var(--accent-purple-deep);
   --color-accent-blue-dark: var(--accent-blue-dark);
   --color-accent-red-deep: var(--accent-red-deep);

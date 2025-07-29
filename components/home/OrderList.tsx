@@ -1,4 +1,4 @@
-import { MoveRight, CheckCheck, Circle, CircleSmall } from "lucide-react";
+import { CheckCheck, CircleSmall } from "lucide-react";
 import React from "react";
 
 const OrderList = () => {
@@ -20,7 +20,7 @@ const OrderList = () => {
         </h1>
 
         <div className="flex flex-col items-end gap-2">
-          {"Ready1" === "Ready" ? (
+          {"Ready3" === "Ready" ? (
             <>
               <p className="text-green-600 bg-accent-green2 px-2 py-1 rounded-lg">
                 <CheckCheck className="inline mr-2" /> Ready
