@@ -30,7 +30,7 @@ const BottomNav = () => {
         <p className="text-lg">More</p>
       </Button>
 
-      <Button className="absolute bottom-7 rounded-full w-20 h-20 flex items-center justify-center p-0">
+      <Button className="absolute bottom-6 rounded-full w-20 h-20 flex items-center justify-center p-0">
         <Icon iconNode={bellConcierge} className="!w-10 !h-10" />
       </Button>
     </div>
