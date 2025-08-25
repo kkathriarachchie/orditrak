@@ -19,7 +19,7 @@ const Header = () => {
           <Input
             type="text"
             placeholder="Search"
-            className="rounded-full py-5 px-10"
+            className="rounded-full py-6 px-10"
           />
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
         </div>

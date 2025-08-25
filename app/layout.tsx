@@ -3,6 +3,9 @@ import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/Header";
 
+import { use } from "react";
+import ClientProvider from "@/components/shared/ClientProvider";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -28,10 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${inter.variable} ${geistMono.variable} font-sans antialiased `}
       >
-        <Header />
-        {children}
+        <ClientProvider>
+          <Header />
+          {children}
+        </ClientProvider>
       </body>
     </html>
   );

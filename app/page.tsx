@@ -9,7 +9,7 @@ import PopularDishes from "@/components/home/PopularDishes";
 export default function Home() {
   return (
     <div>
-      <section className="h-[calc(100vh-5rem)] overflow-hidden flex gap-3">
+      <section className="h-[calc(100vh-6rem)] overflow-hidden flex gap-3">
         {/* Left Div */}
         <div className="flex-[3] ">
           <Greetings />

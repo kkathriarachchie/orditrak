@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const OrderList = () => {
   return (
-    <Card className="mb-3 p-5">
+    <Card className=" p-5">
       <CardContent className="flex items-center gap-5 p-0">
         <Button className="text-xl font-bold rounded-lg w-12 h-12 p-0">
           AM

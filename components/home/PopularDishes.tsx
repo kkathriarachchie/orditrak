@@ -16,31 +16,35 @@ const PopularDishes = () => {
             View all
           </a>
         </CardHeader>
-        <CardContent className="p-0">
-          <ScrollArea className="h-[614px] hide-scrollbar">
-            {popularDishes.map((dish) => (
-              <Card key={dish.id} className="p-5 mb-3">
-                <CardContent className="flex items-center gap-4 p-0">
-                  <h1 className="font-bold text-xl mr-4">
-                    {dish.id < 10 ? `0${dish.id}` : dish.id}
-                  </h1>
-                  <Image
-                    src={dish.image}
-                    alt={dish.name}
-                    className="w-[50px] h-[50px] rounded-full"
-                    width={50}
-                    height={50}
-                  />
-                  <div>
-                    <h1 className="font-semibold tracking-wide">{dish.name}</h1>
-                    <p className="text-sm font-semibold mt-1">
-                      <span className="text-muted-foreground">Orders: </span>
-                      {dish.numberOfOrders}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+        <CardContent className="p-0 my-4">
+          <ScrollArea className="h-[614px] ">
+            <div className="flex flex-col gap-3 px-4 ">
+              {popularDishes.map((dish) => (
+                <Card key={dish.id} className="p-5 cursor-pointer">
+                  <CardContent className="flex items-center gap-4 p-0">
+                    <h1 className="font-bold text-xl mr-4">
+                      {dish.id < 10 ? `0${dish.id}` : dish.id}
+                    </h1>
+                    <Image
+                      src={dish.image}
+                      alt={dish.name}
+                      className="w-[50px] h-[50px] rounded-full"
+                      width={50}
+                      height={50}
+                    />
+                    <div>
+                      <h1 className="font-semibold tracking-wide">
+                        {dish.name}
+                      </h1>
+                      <p className="text-sm font-semibold mt-1">
+                        <span className="text-muted-foreground">Orders: </span>
+                        {dish.numberOfOrders}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </ScrollArea>
         </CardContent>
       </Card>
